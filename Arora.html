@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two Rows, Two Columns</title>
+  <style>
+    body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    color: rgb(62, 172, 216);
+    margin-top: 5rem;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; /* Horizontally center the children */
+    margin-top: 5rem;
+}
+
+
+
+.row{
+    /* border: 2px solid black; */
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#row1 {
+    box-shadow: 8px 8px 5px grey;
+}
+
+#row2{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    height: 400px;
+    width: 400px;
+}
+
+
+#p1{
+    color: rgb(62, 172, 216);
+    margin-bottom: 3rem;
+    margin-top: -1rem;
+    text-shadow: 2px 2px rgb(65, 87, 96);
+}
+
+.u{
+    padding: 1rem;
+    align-self: flex-start;
+}
+
+li{
+    padding: 0.5rem;
+    font-size: 20px;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row" id="row1">
+      <img src="https://hr-gazette.com/wp-content/uploads/2018/10/bigstock-Recruitment-Concept-Idea-Of-C-250362193.jpg" alt="" height="400px" width="600px">
+    </div>
+
+    <div class="row" id="row2">
+      <p style="font-size: 50px; " id="p1">Modules to help with employee</p>
+      
+      <ul class="u">
+        <li>Improved Efficiency</li>
+        <li>Enhanced Data Accuracy</li>
+        <li>Comprehensive Reporting</li>
+        <li>Regulatory Compliance</li>
+      </ul>
+    </div>
+
+  </div>
+</body>
+</html>

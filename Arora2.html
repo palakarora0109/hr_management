@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two Rows, Two Columns</title>
+  <style>
+    body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.p1{
+    text-align: center;
+    color: rgb(62, 172, 216);
+    margin-top: 3rem;
+    font-size: 50px;
+    text-shadow: 2px 2px 2px rgb(52, 89, 104);
+    margin-top: 3rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* Horizontally center the children */
+    
+}
+
+.b2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5rem;
+}
+
+.c{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid black; */
+    background-color: rgb(211, 228, 244);
+    padding: 1.5rem;
+    margin: 2rem;
+    box-shadow: 8px 8px 5px grey;
+}
+
+p{
+    margin-top: 4rem;
+    font-size: 17px;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="b1">
+        <p class="p1">Employee Training and Development</p>
+    </div>
+    <div class="b2">
+        <div id="c-1" class="c">
+            <img src="https://eddy.com/wp-content/uploads/2020/08/9-Reasons-Why-HR-Managers-Love-Their-Jobs@2x-100-1024x543.jpg" alt="" height="250px" width="250px">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa natus reiciendis nisi officiis id autem neque, dolorum cupiditate! Sit corporis veritatis eos pariatur, libero laudantium eum? Sunt cum quae nam.</p>
+        </div>
+        <div id="c-2" class="c">
+            <img src="https://www.mad-hr.co.uk/wp-content/uploads/Helping-Hand-2.png" alt="" height="250px" width="250px">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quis quae nisi nihil, nobis praesentium rem. Sunt, quasi asperiores libero reiciendis est officia cum assumenda, distinctio aspernatur quia ullam porro.</p>
+        </div>
+        <div id="c-3" class="c">
+            <img src="https://upraise.io/wp-content/uploads/2023/01/7-ways-HR-departments-can-help-their-employees-succeed-banner2.webp" alt="" height="350px" width="350px">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium sit commodi quas illo rerum et unde veritatis aliquid. Quasi sit ullam sunt tempora reprehenderit voluptas aut magnam nostrum tenetur illo.</p>
+        </div>
+    </div>
+  </div>
+
+  </div>
+</body>
+</html>

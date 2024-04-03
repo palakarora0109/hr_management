@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two Rows, Two Columns</title>
+  <style>
+   
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1{
+      text-align: center;
+      color: rgba(110, 110, 225, 0.795);      margin-top: 5rem;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; /* Horizontally center the children */
+      margin-top: 0rem;
+    }
+
+    .row{
+      /* border: 2px solid black; */
+      margin: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .column {
+      border: 2px solid black;
+      margin: 1rem;
+      padding: 20px;
+      box-shadow: 8px 8px 5px grey;
+      width: 25rem;
+      height: 8rem;
+      transition: transform 0.3s ease; /* Add a smooth transition effect */
+    }
+
+    .column:hover {
+      transform: scale(1.05); /* Scale the column on hover */
+    }
+
+    h3{
+      color: rgba(110, 110, 225, 0.795);      text-align: center;
+    }
+
+    p{
+      text-align: center;
+      text-decoration: solid;
+    }
+
+    /* Navigation bar styles */
+    nav ul {
+      padding: 0;
+      list-style: none;
+   
+    }
+
+    nav ul li {
+    
+      display: inline-block;
+      list-style: none;
+      font-size: 1.2rem;
+      padding: 0 15px;
+      cursor: pointer;
+      position: relative;
+    }
+
+    nav ul li:after {
+      content: '';
+      width: 0;
+      height: 3px;
+      background: #2192ff;
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      transition: width 0.5s;
+    }
+
+    nav ul li:hover::after {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+
+  <h1>How does EmployeeNet help you?</h1>
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <h3>Simplify Attendance Management</h3>
+        <p>Manage complex rules on attendance policies, multiple shifts, payroll integrations</p>
+      </div>
+      <div class="column">
+        <h3>Manage Employee Leaves in a jiffy</h3>
+        <p>Employee leaves, company holidays all automatically tracked with notifications and reports</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <h3>Automate employee onboarding</h3>
+        <p>Add new employees in seconds instead of hours</p>
+      </div>
+      <div class="column">
+        <h3>Eliminate compliance risks with Payroll</h3>
+        <p>Asanify Payroll software completely automates compliance calculations</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

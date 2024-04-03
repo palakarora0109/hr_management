@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Human Resources</title>
+<style>
+    * {
+        text-align: left;
+    }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .text-container {
+    flex: 1;
+    padding: 0 20px;
+    width: 60%;
+    padding-left: 10%;
+  }
+
+  .container {
+    text-align: center;
+    padding: 50px 0;
+    flex: 1;
+  }
+
+  h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+
+  p {
+    line-height: 1.5;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .button {
+    background-color: rgba(0, 0, 255, 0.811); /* Green */
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 7px;
+  }
+
+  .button:hover {
+    background-color: #3e8e41;
+  }
+
+  .image-container {
+    margin: 0 auto;
+   
+    width: 400px; /* Adjust width as needed */
+  }
+
+  img {
+    width: 100%; /* Adjust width/height as needed */
+  }
+
+  @media (max-width: 768px) {
+    body {
+      flex-direction: column;
+    }
+    .text-container {
+      padding: 20px;
+    }
+  }
+</style>
+</head>
+<body>
+  <section class="text-container">
+    <h1>Human resources
+    at your fingertips</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum maximus purus, tincidunt commodo elit efficitur vel. Suspendisse est lorem, gravida eget lectus eu, volutpat posuere dui. Sed sit amet tempor arcu. </p>
+    <a href="#" class="button">Get Started</a>
+  </section>
+  <section class="container">
+    <div class="image-container">
+      <img src="https://thumbor.forbes.com/thumbor/fit-in/1290x/https://www.forbes.com/advisor/wp-content/uploads/2022/11/Image-12.jpg" alt="Human Resources">
+    </div>
+  </section>
+</body>
+</html>
